@@ -77,9 +77,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.waykonboarding"
+    namespace "com.manish.waykonboarding"
     defaultConfig {
-        applicationId "com.waykonboarding"
+        applicationId "com.manish.waykonboarding"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

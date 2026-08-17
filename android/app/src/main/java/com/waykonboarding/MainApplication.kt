@@ -1,4 +1,4 @@
-package com.waykonboarding
+package com.manish.waykonboarding
 
 import android.app.Application
 import com.facebook.react.PackageList

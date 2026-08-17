@@ -1,0 +1,158 @@
+import { ScreenConfig } from './types';
+
+export const screens: ScreenConfig[] = [
+  {
+    kind: 'choice',
+    title: 'Do you feel like a morning person?',
+    answerKey: 'morningPerson',
+    options: [{ label: 'Yes' }, { label: 'Not yet' }],
+  },
+  {
+    kind: 'choice',
+    title: "What's your age range?",
+    answerKey: 'ageRange',
+    options: [
+      { label: '13-17' },
+      { label: '18-24' },
+      { label: '25-34' },
+      { label: '35-44' },
+      { label: '45-54' },
+      { label: '55+' },
+    ],
+  },
+  {
+    kind: 'choice',
+    title: 'What best describes you?',
+    answerKey: 'profile',
+    options: [{ label: 'Male' }, { label: 'Female' }, { label: 'Other' }],
+  },
+  {
+    kind: 'choice',
+    title: 'What keeps you in bed after the alarm?',
+    answerKey: 'bedBlocker',
+    options: [
+      { label: 'Phone scrolling' },
+      { label: 'Snooze loop' },
+      { label: 'Sleep through alarms' },
+      { label: 'I wake up but stay in bed' },
+    ],
+  },
+  {
+    kind: 'choice',
+    title: 'First thought when the alarm goes off?',
+    answerKey: 'alarmThought',
+    options: [
+      { label: "I'm up" },
+      { label: 'Just 5 more minutes' },
+      { label: "I'll set another alarm" },
+      { label: 'Why did I do this?' },
+    ],
+  },
+  {
+    kind: 'energy',
+    title: 'Wayk gets you out of bed',
+    subtitle:
+      'Your energy rises earlier when your first small win happens right after the alarm.',
+  },
+  {
+    kind: 'choice',
+    title: 'How many alarms do you set?',
+    answerKey: 'alarmCount',
+    options: [{ label: 'One' }, { label: '2-3' }, { label: '4+' }],
+  },
+  {
+    kind: 'choice',
+    title: 'If you set one alarm, would you wake up?',
+    answerKey: 'oneAlarm',
+    options: [{ label: 'Yes' }, { label: 'Sometimes' }, { label: 'No' }],
+  },
+  {
+    kind: 'choice',
+    title: 'Do you ever turn off the alarm and go back to sleep?',
+    answerKey: 'turnOffAlarm',
+    options: [
+      { label: 'Often' },
+      { label: 'Sometimes' },
+      { label: 'Rarely' },
+      { label: 'Never' },
+    ],
+  },
+  { kind: 'comparison', title: 'One alarm. One mission.' },
+  {
+    kind: 'choice',
+    title: 'How do you feel setting your alarm at night?',
+    answerKey: 'nightFeeling',
+    options: [
+      { label: 'Motivated' },
+      { label: 'Anxious about sleep' },
+      { label: 'Defeated' },
+      { label: 'Neutral' },
+    ],
+  },
+  {
+    kind: 'choice',
+    title: 'How long until you feel fully awake?',
+    answerKey: 'awakeDuration',
+    options: [
+      { label: 'Instantly' },
+      { label: '10-15 minutes' },
+      { label: '30 minutes or more' },
+    ],
+  },
+  { kind: 'biology' },
+  {
+    kind: 'time',
+    title: 'What time do you usually go to bed?',
+    subtitle: 'Choose your typical bedtime.',
+    timeField: 'bedtime',
+  },
+  {
+    kind: 'time',
+    title: 'What time do you want to wake up?',
+    subtitle: 'Choose your ideal wake-up time.',
+    timeField: 'wake',
+  },
+  { kind: 'target' },
+  { kind: 'quote' },
+  { kind: 'mission' },
+  { kind: 'missionSetup' },
+  { kind: 'missionWhy' },
+  { kind: 'firstWayk' },
+  { kind: 'days' },
+  { kind: 'sound' },
+  {
+    kind: 'choice',
+    title: 'Play your alarm during the mission?',
+    subtitle: 'You can change this later in settings.',
+    answerKey: 'missionAlarm',
+    options: [
+      { label: 'Keep alarm ringing while completing the mission.' },
+      {
+        label:
+          'Silence the alarm during my mission. It rings again if I leave the app.',
+      },
+    ],
+  },
+  {
+    kind: 'choice',
+    title: 'Where did you hear about us?',
+    answerKey: 'source',
+    options: [
+      { label: 'Doctor', icon: '⚕️' },
+      { label: 'Instagram', icon: '◎' },
+      { label: 'Facebook', icon: 'f' },
+      { label: 'Twitter', icon: '𝕏' },
+      { label: 'YouTube', icon: '▶' },
+      { label: 'Reddit', icon: '●' },
+    ],
+  },
+  { kind: 'referral' },
+  { kind: 'speedResult' },
+  { kind: 'notifications' },
+  { kind: 'commitment' },
+  { kind: 'setupProgress' },
+  { kind: 'morningPlan' },
+  { kind: 'unlock' },
+  { kind: 'account' },
+  { kind: 'complete' },
+];

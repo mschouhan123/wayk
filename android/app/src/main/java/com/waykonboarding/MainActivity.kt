@@ -1,4 +1,4 @@
-package com.waykonboarding
+package com.manish.waykonboarding
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
